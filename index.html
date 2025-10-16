@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- 🧾 DOCTYPE declaration: browser ko batata hai ye HTML5 document hai -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- 🌍 charset UTF-8: text encoding set karta hai (supports all characters) -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 📱 viewport: responsive design ke liye (mobile screen adjust hoti hai) -->
+
+  <title>Responsive Navbar with Glass Effect</title>
+  <!-- 🏷️ Title: browser tab me page ka title show karta hai -->
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- 🎨 External CSS file link -->
+</head>
+
+<body>
+  <!-- 🧩 BODY: page ke visible content ka container -->
+
+  <!-- 🧭 HEADER (Semantic Tag)
+       - Isme navigation bar, logo aur theme toggle rakhe gaye hain.
+       - Semantic tag use karne se SEO aur accessibility dono improve hoti hain.
+  -->
+  <header class="navbar" id="navbar">
+
+    <!-- 🔷 LOGO: usually top-left pe branding ya home link hota hai -->
+    <a href="#home" class="logo">My Logo</a>
+
+    <!-- 🔗 NAV (Semantic Tag)
+         - Website ke main navigation links (Home, About, etc.)
+         - Semantic nav tag use karne se screen readers ko navigation area samajh me aata hai.
+    -->
+    <nav class="nav-links" id="navLinks">
+      <ul>
+        <!-- 🧱 UL (unordered list) me LI (list items) ke andar links rakhe gaye -->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- 🪄 RIGHT SECTION
+         - Yahan contact button, dark/light toggle aur hamburger menu rakhe gaye hain.
+         - Separate div me rakhne se layout control karna easy hota hai.
+    -->
+    <div class="right-section">
+      <!-- 📞 Contact Button: contact section par direct scroll karega -->
+      <a href="#contact" class="contact-btn">Contact Us</a>
+
+      <!-- 🌗 Theme Toggle Button: light/dark mode switch -->
+      <div class="toggle-switch" id="themeToggle">
+        <span id="themeIcon">🌙</span>
+      </div>
+
+      <!-- 🍔 Hamburger Menu (mobile ke liye)
+           - 3 span lines se animated hamburger banaya gaya hai.
+      -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- 📄 PAGE SECTIONS (Semantic Tags)
+       - Har major content area ke liye <section> tag use hua hai.
+       - SEO aur structure ke liye helpful.
+  -->
+
+  <section id="home" class="section">
+    <h1>Home Section</h1>
+  </section>
+
+  <section id="about" class="section">
+    <h1>About Section</h1>
+  </section>
+
+  <section id="services" class="section">
+    <h1>Services Section</h1>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h1>Portfolio Section</h1>
+  </section>
+
+  <section id="contact" class="section">
+    <h1>Contact Section</h1>
+  </section>
+
+  <!-- ⚙️ SCRIPT: JavaScript file link
+       - Navbar toggle, theme switch, scroll effect yahan handle hote hain.
+  -->
+  <script src="script.js"></script>
+</body>
+</html>
